@@ -1,7 +1,7 @@
 sap.ui.define([
   "sap/ui/test/Opa5",
-  "painelui5/painelui5/test/integration/arrangements/Startup",
-  "painelui5/painelui5/test/integration/BasicJourney"
+  "projectUI5/painelUI5/test/integration/arrangements/Startup",
+  "projectUI5/painelUI5/test/integration/BasicJourney"
 ], function(Opa5, Startup) {
   "use strict";
 

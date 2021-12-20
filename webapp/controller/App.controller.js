@@ -1,7 +1,7 @@
 sap.ui.define([
-  "painelui5/painelui5/controller/BaseController"
+  "projectUI5/painelUI5/controller/BaseController"
 ], function(Controller) {
   "use strict";
 
-  return Controller.extend("painelui5.painelui5.controller.App", {});
+  return Controller.extend("projectUI5.painelUI5.controller.App", {});
 });

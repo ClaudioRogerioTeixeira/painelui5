@@ -1,7 +1,7 @@
 {
   "_version": "1.12.0",
   "sap.app": {
-    "id": "painelui5.painelui5",
+    "id": "projectUI5.painelUI5",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -28,7 +28,7 @@
   },
   "sap.ui5": {
     "rootView": {
-      "viewName": "painelui5.painelui5.view.App",
+      "viewName": "projectUI5.painelUI5.view.App",
       "type": "XML",
       "async": true,
       "id": "idAppControl"
@@ -49,7 +49,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "painelui5.painelui5.i18n.i18n"
+          "bundleName": "projectUI5.painelUI5.i18n.i18n"
         }
       }
     },
@@ -64,7 +64,7 @@
       "config": {
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
-        "viewPath": "painelui5.painelui5.view",
+        "viewPath": "projectUI5.painelUI5.view",
         "controlId": "idAppControl",
         "controlAggregation": "pages",
         "async": true

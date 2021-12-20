@@ -1,4 +1,4 @@
- <mvc:View controllerName="painelui5.painelui5.controller.App"
+ <mvc:View controllerName="projectUI5.painelUI5.controller.App"
   displayBlock="true"
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc">
