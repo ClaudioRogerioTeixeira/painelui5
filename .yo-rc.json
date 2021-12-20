@@ -1,12 +1,12 @@
 {
   "generator-easy-ui5": {
     "projectname": "painelui5",
-    "namespace": "n",
+    "namespace": "painelui5",
     "platform": "Static webserver",
     "viewtype": "XML",
     "viewname": "App",
     "ui5libs": "Content delivery network (OpenUI5)",
     "newdir": false,
-    "namespaceURI": "n"
+    "namespaceURI": "painelui5"
   }
 }
