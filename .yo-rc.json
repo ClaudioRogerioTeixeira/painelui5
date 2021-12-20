@@ -1,0 +1,14 @@
+{
+  "generator-ui5-ts-app": {
+    "application": "painelui5",
+    "namespace": "com.te",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.97.0",
+    "author": "Teixeira",
+    "tstypes": "@openui5/ts-types-esm",
+    "tstypesVersion": "1.97.0",
+    "appId": "com.te.painelui5",
+    "appURI": "com/te/painelui5",
+    "setupCompleted": true
+  }
+}
