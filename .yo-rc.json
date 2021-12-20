@@ -1,14 +1,12 @@
 {
-  "generator-ui5-ts-app": {
-    "application": "painelui5",
+  "generator-easy-ui5": {
+    "projectname": "painelui5",
     "namespace": "com.myorg",
-    "framework": "OpenUI5",
-    "frameworkVersion": "1.97.0",
-    "author": "Teixeira",
-    "tstypes": "@openui5/ts-types-esm",
-    "tstypesVersion": "1.97.0",
-    "appId": "com.myorg.painelui5",
-    "appURI": "com/myorg/painelui5",
-    "setupCompleted": true
+    "platform": "Static webserver",
+    "viewtype": "XML",
+    "viewname": "App",
+    "ui5libs": "Local resources (OpenUI5)",
+    "newdir": false,
+    "namespaceURI": "com/myorg"
   }
 }
