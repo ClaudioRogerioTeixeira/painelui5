@@ -2,11 +2,11 @@ sap.ui.define([
   "sap/ui/core/mvc/Controller",
   "sap/ui/core/routing/History",
   "sap/ui/core/UIComponent",
-  "com/myorg/painelui5/model/formatter"
+  "n/painelui5/model/formatter"
 ], function(Controller, History, UIComponent, formatter) {
   "use strict";
 
-  return Controller.extend("com.myorg.painelui5.controller.BaseController", {
+  return Controller.extend("n.painelui5.controller.BaseController", {
 
     formatter: formatter,
 

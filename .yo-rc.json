@@ -1,12 +1,12 @@
 {
   "generator-easy-ui5": {
     "projectname": "painelui5",
-    "namespace": "com.myorg",
+    "namespace": "n",
     "platform": "Static webserver",
     "viewtype": "XML",
     "viewname": "App",
-    "ui5libs": "Local resources (OpenUI5)",
+    "ui5libs": "Content delivery network (OpenUI5)",
     "newdir": false,
-    "namespaceURI": "com/myorg"
+    "namespaceURI": "n"
   }
 }

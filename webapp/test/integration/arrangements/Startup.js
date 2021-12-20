@@ -3,12 +3,12 @@ sap.ui.define([
 ], function(Opa5) {
   "use strict";
 
-  return Opa5.extend("com.myorg.painelui5.test.integration.arrangements.Startup", {
+  return Opa5.extend("n.painelui5.test.integration.arrangements.Startup", {
 
     iStartMyApp: function () {
       this.iStartMyUIComponent({
         componentConfig: {
-          name: "com.myorg.painelui5",
+          name: "n.painelui5",
           async: true,
           manifest: true
         }

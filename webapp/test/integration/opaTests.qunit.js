@@ -6,7 +6,7 @@ sap.ui.getCore().attachInit(function() {
   "use strict";
 
   sap.ui.require([
-    "com/myorg/painelui5/test/integration/AllJourneys"
+    "n/painelui5/test/integration/AllJourneys"
   ], function() {
     QUnit.start();
   });

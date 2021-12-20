@@ -1,4 +1,4 @@
- <mvc:View controllerName="com.myorg.painelui5.controller.App"
+ <mvc:View controllerName="n.painelui5.controller.App"
   displayBlock="true"
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc">

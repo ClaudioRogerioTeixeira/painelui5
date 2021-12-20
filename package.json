@@ -12,7 +12,7 @@
     "clearCoverage": "shx rm -rf coverage",
     "karma": "run-s clearCoverage karma-ci",
     "lint": "eslint .",
-    "build:ui": "ui5 build --a "
+    "build:ui": "ui5 build --clean-dest --dest approuter/webapp "
   },
   "devDependencies": {
     "shx": "^0.3.2",

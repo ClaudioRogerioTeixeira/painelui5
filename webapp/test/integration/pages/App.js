@@ -4,7 +4,7 @@ sap.ui.require([
 ], function (Opa5, AggregationLengthEquals) {
   "use strict";
 
-  var sViewName = "com.myorg.painelui5.view.App";
+  var sViewName = "n.painelui5.view.App";
   var sAppId = "idAppControl";
 
   Opa5.createPageObjects({
