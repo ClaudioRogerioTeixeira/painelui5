@@ -3,7 +3,7 @@ import Controller from "sap/ui/core/mvc/Controller";
 import AppComponent from "../Component";
 
 /**
- * @namespace com.te.painelui5.controller
+ * @namespace com.myorg.painelui5.controller
  */
 export default class AppController extends Controller {
 

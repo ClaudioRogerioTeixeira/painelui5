@@ -3,7 +3,7 @@ import { support } from "sap/ui/Device";
 
 
 /**
- * @namespace com.te.painelui5
+ * @namespace com.myorg.painelui5
  */
 export default class Component extends UIComponent {
 

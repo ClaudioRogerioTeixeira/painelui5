@@ -1,6 +1,6 @@
 specVersion: "2.0"
 metadata:
-  name: com.te.painelui5
+  name: com.myorg.painelui5
 type: application
 resources:
   configuration:

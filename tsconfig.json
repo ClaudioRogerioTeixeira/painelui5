@@ -17,7 +17,7 @@
             "./node_modules/@openui5/ts-types-esm"
         ],
         "paths": {
-            "com/te/painelui5/*": [
+            "com/myorg/painelui5/*": [
                 "./src/*"
             ]
         }
