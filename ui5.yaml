@@ -1,8 +1,4 @@
-specVersion: '2.3'
+specVersion: '2.2'
 metadata:
-  name: "PainelUI5"
+  name: sap-ui5-PainelUI5
 type: application
-resources:
-  configuration:
-    paths:
-      webapp: .

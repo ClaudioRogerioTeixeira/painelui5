@@ -1,16 +1,31 @@
 {
-  "name": "painelui5",
+  "name": "PainelUI5",
   "version": "1.0.0",
-  "author": "Claudio Teixeira",
-  "description": "PAINELUI5",
+  "description": "Painel sapui5",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "server.js",
   "scripts": {
-    "start": "ui5 serve",
-    "build": "ui5 build"
+    "start": "node server.js",
+    "test": "node test.js"
   },
   "dependencies": {
-    "@openui5/themelib_sap_fiori_3": "^1"
+    "ejs": "^3.1.5",
+    "express": "^4.17.2"
   },
   "devDependencies": {
-    "@ui5/cli": "^2.0.0"
-  }
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ClaudioRogerioTeixeira/painelui5"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
