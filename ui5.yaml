@@ -1,0 +1,8 @@
+specVersion: '2.3'
+metadata:
+  name: "PainelUI5"
+type: application
+resources:
+  configuration:
+    paths:
+      webapp: .
