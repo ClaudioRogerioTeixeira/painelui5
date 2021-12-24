@@ -1,26 +1,23 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/resources/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
-
-  <title>painelUI5</title>
-
-  <script id="sap-ui-bootstrap" src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-    data-sap-ui-theme="sap_fiori_3" data-sap-ui-resourceroots='{
-        "projectUI5.painelUI5": "./"
-      }' data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" data-sap-ui-compatVersion="edge"
-    data-sap-ui-async="true" data-sap-ui-frameOptions="trusted">
-    </script>
+  <script id="sap-ui-bootstrap"
+		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+		data-sap-ui-language="pt_BR"
+    data-sap-ui-theme="sap_fiori_3"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true"
+		data-sap-ui-resourceroots='{"painel.ui5": "./"}'
+		data-sap-ui-onInit="module:painel/ui5/index"
+		>
+	</script>
+  <title>Painel UI5</title>
 </head>
-
-<body class="sapUiBody">
-  <div data-sap-ui-component data-name="projectUI5.painelUI5" data-id="container"
-    data-settings='{"id" : "painelUI5"}'>
-  </div>
+<body class="sapUiBody" id="content">
+  
 </body>
-
 </html>

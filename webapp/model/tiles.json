@@ -1,0 +1,14 @@
+[
+  {
+    "title": "CRONÔMETRO",
+    "subtitle": "Exibe cronômentro do próximo Natal",
+    "image": "./assets/cronometro.jpg",
+    "route": "cronometro"
+  },
+  {
+    "title": "COVID 19",
+    "subtitle": "Indicadores atuais de API",
+    "image": "./assets/covid19.jpg",
+    "route": "covid19"
+  }  
+]

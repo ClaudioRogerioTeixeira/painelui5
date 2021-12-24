@@ -1,91 +1,134 @@
 {
-  "_version": "1.12.0",
-  "sap.app": {
-    "id": "projectUI5.painelUI5",
-    "type": "application",
-    "i18n": "i18n/i18n.properties",
-    "applicationVersion": {
-      "version": "1.0.0"
+    "_version": "1.8.0",
+    "sap.app": {
+        "id": "painel.ui5",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{apptitle}}",
+        "description": "{{appDescription}}",
+        "dataSources": {
+            "formacoes_alias": {
+                "uri": "model/formacoes.json",
+                "type": "JSON"
+            }
+        }
     },
-    "title": "{{appTitle}}",
-    "description": "{{appDescription}}"
-  },
-  "sap.ui": {
-    "technology": "UI5",
-    "icons": {
-      "icon": "",
-      "favIcon": "",
-      "phone": "",
-      "phone@2": "",
-      "tablet": "",
-      "tablet@2": ""
+    "sap.ui": {
+        "technology": "Covid19",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": ",",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_fiori_3",
+            "sap_belize"
+        ]
     },
-    "deviceTypes": {
-      "desktop": true,
-      "tablet": true,
-      "phone": true
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "painel.ui5.view.App",
+            "type": "XML"
+        },
+        "dependencies": {
+            "minUI5Version": "1.60.0",
+            "libs": {
+                "sap.ui.layout": {},
+                "sap.ui.core": {},
+                "sap.m": {}
+            }
+        },        
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "painel.ui5.i18n.i18n"
+                }
+            },
+            "formacoes": {
+                "type": "sap.ui.model.json.JSONModel",
+                "dataSource": "formacoes_alias"
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/styles.css"
+                }
+            ]
+        },
+        "routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "async": true,
+                "viewPath": "painel.ui5.view",
+                "controlAggregation": "pages",
+                "controlId": "app",
+                "clearControlAggregation": false
+            },
+            "routes": [
+                {
+                    "name": "RouteApp",
+                    "pattern": "",
+                    "target": [
+                        "TargetApp"
+                    ]
+                },
+                {
+                    "name": "cronometro",
+                    "pattern": "cronometro",
+                    "target": [
+                        "TargetCronometro"
+                    ]
+                },
+                {
+                    "name": "covid19",
+                    "pattern": "covid19",
+                    "target": [
+                        "TargetCovid19"
+                    ]
+                }
+            ],
+            "targets": {
+                "TargetApp": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewName": "App"
+                },
+                "TargetCronometro": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewName": "Cronometro"
+                },
+                "TargetCovid19": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewName": "Covid19"
+                }
+            }
+        }
+    },
+    "sap.platform.hcp": {
+        "uri": "webapp",
+        "_version": "1.1.0"
     }
-  },
-  "sap.ui5": {
-    "rootView": {
-      "viewName": "projectUI5.painelUI5.view.App",
-      "type": "XML",
-      "async": true,
-      "id": "idAppControl"
-    },
-    "dependencies": {
-      "minUI5Version": "1.60.0",
-      "libs": {
-        "sap.ui.core": {},
-        "sap.m": {},
-        "sap.ui.layout": {}
-      }
-    },
-    "contentDensities": {
-      "compact": true,
-      "cozy": true
-    },
-    "models": {
-      "i18n": {
-        "type": "sap.ui.model.resource.ResourceModel",
-        "settings": {
-          "bundleName": "projectUI5.painelUI5.i18n.i18n"
-        }
-      }
-    },
-    "resources": {
-      "css": [
-        {
-          "uri": "css/style.css"
-        }
-      ]
-    },
-    "routing": {
-      "config": {
-        "routerClass": "sap.m.routing.Router",
-        "viewType": "XML",
-        "viewPath": "projectUI5.painelUI5.view",
-        "controlId": "idAppControl",
-        "controlAggregation": "pages",
-        "async": true
-      },
-      "routes": [
-        {
-          "name": "RouteApp",
-          "pattern": "RouteApp",
-          "target": [
-            "TargetApp"
-          ]
-        }
-      ],
-      "targets": {
-        "TargetApp": {
-          "viewType": "XML",
-          "viewLevel": 1,
-          "viewId": "idAppControl",
-          "viewName": "App"
-        }
-      }
-    }
-  }
 }
