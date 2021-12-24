@@ -32,3 +32,7 @@ HorizontalLayout
 GenericTile
 footer
 Toobar
+
+# Projetos inclusos no Portfolio
+Cronometro
+Covid19
