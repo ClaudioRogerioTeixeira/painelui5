@@ -60,9 +60,9 @@
                     "bundleName": "painel.ui5.i18n.i18n"
                 }
             },
-            "formacoes": {
+            "tiles": {
                 "type": "sap.ui.model.json.JSONModel",
-                "dataSource": "formacoes_alias"
+                "dataSource": "tiles"
             }
         },
         "resources": {

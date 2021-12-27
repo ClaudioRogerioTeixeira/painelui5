@@ -3,6 +3,7 @@
 	xmlns:mvc="sap.ui.core.mvc"
   xmlns:core="sap.ui.core"
 	xmlns="sap.m"
+  xmlns:grid="sap.ui.layout.cssgrid"
 	displayBlock="true"
 	height="100%"
 	busyIndicatorDelay="0"
@@ -12,13 +13,52 @@
   <Page 
     showNavButton="true" 
     navButtonPress="onNavBack"
-    title="CRONOMETRO"
-  >    
-      <footer>
-        <core:Fragment fragmentName="painel.ui5.view.Footer" type="XML" />          
-      </footer>
-  </Page>
-    
+    title="Voltar"
+  >
+
+    <grid:CSSGrid
+      id="gridCronometro"
+      gridTemplateColumns="1fr"
+      gridGap="1rem">
+        <Image src="./assets/headerCronometro.png" width="100%" height="auto" />
+        
+        <grid:CSSGrid
+        id="gridContent"
+        gridTemplateColumns="1fr 1fr 1fr 1fr"
+        gridGap="1rem">
+
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Dias" >
+          <TileContent unit="{i18n>titleUnit}" footer="SAPUI5" footerColor="Good">
+            <NumericContent value="{timer>/days}" valueColor="Critical" withMargin="false" icon="sap-icon://date-time"/>
+          </TileContent>
+        </GenericTile>
+          
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Horas" >
+          <TileContent unit="{i18n>titleUnit}" footer="SAPUI5" footerColor="Good">
+            <NumericContent value="{timer>/hours}" valueColor="Critical" withMargin="false" icon="sap-icon://date-time"/>
+          </TileContent>
+        </GenericTile>
+      
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Minutos" >
+          <TileContent unit="{i18n>titleUnit}" footer="SAPUI5" footerColor="Good">
+            <NumericContent value="{timer>/minutes}" valueColor="Critical" withMargin="false" icon="sap-icon://date-time"/>
+          </TileContent>
+        </GenericTile>
+        
+        <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Segundos" >
+          <TileContent unit="{i18n>titleUnit}" footer="SAPUI5" footerColor="Good">
+            <NumericContent value="{timer>/seconds}" valueColor="Critical" withMargin="false" icon="sap-icon://date-time"/>
+          </TileContent>
+        </GenericTile>
+
+      </grid:CSSGrid> 
+          
+    </grid:CSSGrid> 
+ 
+    <footer>
+      <core:Fragment fragmentName="painel.ui5.view.Footer" type="XML" />          
+    </footer>
+  </Page>   
 </App>
 
 </mvc:View>

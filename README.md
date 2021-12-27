@@ -12,7 +12,7 @@ npm install --global @ui5/cli
 npm install --save-dev @ui5/cli
 
 
-Template:
+# Template:
 Criação do template utilizando o generator-sapui5-templates
 Link: https://www.npmjs.com/package/@sapui5/generator-sapui5-templates
  
@@ -22,7 +22,10 @@ npm install -g yo @sapui5/generator-sapui5-templates
 # Criação do Template
 yo easy-ui5
 
-# Controles UI5 utilizados
+# Template
+Alterado, criado manualmente.
+
+# Controles UI5 utilizados no Painel
 Shell
 App
 Page
@@ -34,5 +37,9 @@ footer
 Toobar
 
 # Projetos inclusos no Portfolio
-Cronometro
-Covid19
+1) Cronômetro
+2) Covid19
+
+# 1) Controles UI5 utilizados no Cronômetro
+CSSGrid
+GenericTile

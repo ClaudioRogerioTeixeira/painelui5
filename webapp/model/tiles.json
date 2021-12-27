@@ -1,6 +1,6 @@
 [
   {
-    "title": "CRONÔMETRO",
+    "title": "CRONÔMETRO - Contagem Regressiva",
     "subtitle": "Exibe cronômentro do próximo Natal",
     "image": "./assets/cronometro.jpg",
     "route": "cronometro"

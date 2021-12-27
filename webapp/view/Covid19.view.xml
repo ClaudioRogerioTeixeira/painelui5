@@ -14,9 +14,9 @@
   <Page 
     showNavButton="true" 
     navButtonPress="onNavBack"
-    title="COVID 19"
+    title="Voltar"
   > 
-  
+    <Image src="./assets/headerCovid19.png" width="100%" height="auto" />
       <footer>
         <core:Fragment fragmentName="painel.ui5.view.Footer" type="XML" />          
       </footer>
