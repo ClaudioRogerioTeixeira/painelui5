@@ -103,6 +103,13 @@
                     "target": [
                         "TargetCovid19"
                     ]
+                },
+                {
+                    "name": "treebasic",
+                    "pattern": "treebasic",
+                    "target": [
+                        "TargetTreebasic"
+                    ]
                 }
             ],
             "targets": {
@@ -123,6 +130,12 @@
                     "transition": "slide",
                     "clearControlAggregation": false,
                     "viewName": "Covid19"
+                },
+                "TargetTreebasic": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewName": "TreeBasic"
                 }
             }
         }

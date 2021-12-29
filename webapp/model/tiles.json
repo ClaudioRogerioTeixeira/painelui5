@@ -7,8 +7,14 @@
   },
   {
     "title": "COVID 19",
-    "subtitle": "Indicadores atuais de API",
+    "subtitle": "Dados Covid 19 Cidade Barretos",
     "image": "./assets/covid19.jpg",
     "route": "covid19"
-  }  
+  },
+  {
+    "title": "TREE BASIC",
+    "subtitle": "Tree básico",
+    "image": "./assets/treebasic.jpg",
+    "route": "treebasic"
+  }    
 ]

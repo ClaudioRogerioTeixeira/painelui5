@@ -1,18 +1,21 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/routing/History"
-], function(
-	Controller, History
-) {
+	"sap/ui/core/routing/History",
+	'sap/ui/model/json/JSONModel'
+], function(Controller, History, JSONModel) {
 	"use strict";
 
 	return Controller.extend("painel.ui5.controller.Covid19", {
-		
+
+		// dataPath: "https://api.rootnet.in/covid19-in/stats/latest",
+		dataPath: "./model/covid19Btos.json",
+
 		/**
 		 * @override
 		 */
 		onInit: function() {
-			// debugger;				
+			var dataModel = new JSONModel(this.dataPath);
+			this.getView().setModel(dataModel, "Latest")
 		},
 
 		onNavBack: function(oEvent) {
@@ -26,7 +29,7 @@ sap.ui.define([
 				oRouter.navTo("RouteApp", true)
 			}
 			
-		}
+		},
 		
 	});
 

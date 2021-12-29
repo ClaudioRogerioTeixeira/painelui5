@@ -1,0 +1,58 @@
+{
+  "abertura": "08/11/2017",
+  "situacao": "ATIVA",
+  "tipo": "MATRIZ",
+  "nome": "MULTIPAPEL PAPELARIA LTDA",
+  "porte": "MICRO EMPRESA",
+  "natureza_juridica": "206-2 - Sociedade Empresária Limitada",
+  "atividade_principal": [
+  {
+  "code": "47.61-0-03",
+  "text": "Comércio varejista de artigos de papelaria"
+  }
+  ],
+  "atividades_secundarias": [
+  {
+  "code": "47.55-5-02",
+  "text": "Comercio varejista de artigos de armarinho"
+  },
+  {
+  "code": "82.19-9-01",
+  "text": "Fotocópias"
+  }
+  ],
+  "qsa": [
+  {
+  "nome": "LUCINETE LUIZ PINTO SILVA",
+  "qual": "49-Sócio-Administrador"
+  },
+  {
+  "nome": "LUIS HENRIQUE DA SILVA",
+  "qual": "49-Sócio-Administrador"
+  }
+  ],
+  "logradouro": "AVENIDA SANTOS DUMONT",
+  "numero": "617",
+  "complemento": "SALA 05",
+  "municipio": "SOROCABA",
+  "bairro": "JARDIM ANA MARIA",
+  "uf": "SP",
+  "cep": "18.065-290",
+  "email": "naoinformado@naoinformado.com.br",
+  "telefone": "(15) 3000-0000",
+  "data_situacao": "08/11/2017",
+  "cnpj": "29.023.259/0001-30",
+  "ultima_atualizacao": "2021-10-14T23:59:59.000Z",
+  "status": "OK",
+  "fantasia": "",
+  "efr": "",
+  "motivo_situacao": "",
+  "situacao_especial": "",
+  "data_situacao_especial": "",
+  "capital_social": "10000.00",
+  "extra": {},
+  "billing": {
+  "free": true,
+  "database": true
+  }
+  }

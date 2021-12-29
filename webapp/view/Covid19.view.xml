@@ -1,14 +1,12 @@
-<mvc:View 
+<mvc:View
 	controllerName="painel.ui5.controller.Covid19"
 	xmlns:mvc="sap.ui.core.mvc"
   xmlns:core="sap.ui.core"
-
   xmlns="sap.m"
 	displayBlock="true"
 	height="100%"
 	busyIndicatorDelay="0"
 >
-
 
 <App id="app">
   <Page 
@@ -17,9 +15,26 @@
     title="Voltar"
   > 
     <Image src="./assets/headerCovid19.png" width="100%" height="auto" />
-      <footer>
-        <core:Fragment fragmentName="painel.ui5.view.Footer" type="XML" />          
-      </footer>
+
+    <Page id="covid" showHeader="false" enableScrolling="false" >
+      <List
+        id="myList"        
+        headerText="Últimos Dados Covid19 (região de Barretos)"
+        items="{Latest>/}"
+        >
+        <items>
+          <StandardListItem
+            title="{Latest>city}"
+            description="Data: {Latest>date}"
+            info="Total Casos Confirmados: {Latest>confirmed}"
+          />
+        </items>
+      </List>
+    </Page>
+
+    <footer>
+      <core:Fragment fragmentName="painel.ui5.view.Footer" type="XML" />          
+    </footer>
   </Page>
     
 </App>
