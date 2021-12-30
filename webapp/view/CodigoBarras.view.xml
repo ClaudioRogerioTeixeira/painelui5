@@ -1,0 +1,39 @@
+<mvc:View
+	controllerName="painel.ui5.controller.CodigoBarras"  
+	xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+>
+
+<App id="app">
+  <Page 
+    showNavButton="true" 
+    navButtonPress="onNavBack"
+    title="Voltar"
+  > 
+    <Image class="sapUiTinyMarginBottom" src="./assets/headerCodigoBarras.png" width="100%" height="auto" />
+
+    <content>
+      <core:HTML  content="&lt;div  id=&quot;id=scandit-barcode-picker&quot;  &gt;  &lt;/div&gt;"></core:HTML>
+
+      <html:div id="scandit-barcode-picker" />
+      
+    </content>
+      	
+    <footer>
+      <Bar>
+        <contentLeft>
+          <Button text="Inicar Scaner" type="Accept" press=".iniciarScaner" />
+        </contentLeft>
+        <contentRight>
+          <Button text="Parar Scaner" type="Reject" press=".pararScaner" />
+        </contentRight>
+      </Bar> 
+    </footer>
+  </Page>
+    
+</App>
+
+
+</mvc:View>

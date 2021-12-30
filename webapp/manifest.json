@@ -70,6 +70,12 @@
                 {
                     "uri": "css/styles.css"
                 }
+            ],
+            "js": [
+                {
+                    "uri": "assets/libs/ScandIT.js",
+                    "name": "ScandIT.js"
+                }
             ]
         },
         "routing": {
@@ -110,6 +116,13 @@
                     "target": [
                         "TargetTreebasic"
                     ]
+                },
+                {
+                    "name": "codigobarras",
+                    "pattern": "codigobarras",
+                    "target": [
+                        "TargetCodigoBarras"
+                    ]
                 }
             ],
             "targets": {
@@ -136,6 +149,12 @@
                     "transition": "slide",
                     "clearControlAggregation": false,
                     "viewName": "TreeBasic"
+                },
+                "TargetCodigoBarras": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewName": "CodigoBarras"
                 }
             }
         }

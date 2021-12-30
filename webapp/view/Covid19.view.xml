@@ -21,12 +21,13 @@
         id="myList"        
         headerText="Últimos Dados Covid19 (região de Barretos)"
         items="{Latest>/}"
+        footerText="Dados Covid19 - Fonte: https://brasil.io"
         >
         <items>
           <StandardListItem
             title="{Latest>city}"
             description="Data: {Latest>date}"
-            info="Total Casos Confirmados: {Latest>confirmed}"
+            info="Total Casos Confirmados: {Latest>confirmed}"    
           />
         </items>
       </List>

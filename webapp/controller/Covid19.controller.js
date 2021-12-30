@@ -18,6 +18,12 @@ sap.ui.define([
 			this.getView().setModel(dataModel, "Latest")
 		},
 
+		/*
+		this.getView().byId("idList").attachUpdateFinished(null, function(oEvent) {
+  var iCount = oEvent.getParameter("actual");
+  }, this);
+		*/
+
 		onNavBack: function(oEvent) {
 			var oHistory = History.getInstance();
 			var sPreviousHash = oHistory.getPreviousHash();

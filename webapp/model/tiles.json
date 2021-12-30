@@ -16,5 +16,11 @@
     "subtitle": "Tree básico",
     "image": "./assets/treebasic.jpg",
     "route": "treebasic"
-  }    
+  },
+  {
+    "title": "CÓDIGO DE BARRAS",
+    "subtitle": "Leitor de Código de Barras",
+    "image": "./assets/codigoBarras.jpg",
+    "route": "codigobarras"
+  }      
 ]
